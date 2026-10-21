@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="tp.css">
+    </head>
+    
+
+
+
+    <body>
+
+<div id ="calculator">
+    <input id = "display" readonly>
+    <div id ="keys">
+        <button onclick="cler()">C</button>
+          <button onclick="back()">⌫</button>
+           <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('*')">*</button>
+         <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+           <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')">-</button>
+             <button onclick="appendToDisplay('6')">6</button>
+              <button onclick="appendToDisplay('5')">5</button>
+                 <button onclick="appendToDisplay('4')">4</button>
+                 <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                     <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="calculate()">=</button>
+                            <button onclick="appendToDisplay('0')">0</button>
+                               <button onclick="appendToDisplay('.')">.</button>
+                                
+
+     <style>
+        #calculator{
+            border: solid ;
+            border-radius: 50px;   
+            margin: 20px;
+            max-width: 500px;
+            overflow: hidden;
+
+        }
+        #display{
+            width:470px ;
+            padding: 35px; 
+            background-color: rgb(43, 44, 38);
+            border:none ;
+            color:rgb(115, 115, 115);
+            font-size: 50px;
+        }
+        #keys{
+           
+            display: grid;
+            grid-template-columns: repeat(4 ,1fr);
+            background-color: rgb(115, 115, 115);
+            padding: 25px;
+            gap: 10px;
+           
+            
+        }
+        button{
+            width :90px;
+            height: 90px;
+            border-radius: 60px;
+            border: none; 
+            background-color: rgb(43, 44, 38);
+            color:  rgb(115, 115, 115);
+            font-size: 50px;
+            cursor: pointer;
+        }
+        button:hover{
+                 background-color: rgb(85, 86, 78)
+
+        }
+        button:active{
+               background-color: rgb(94, 95, 88)
+
+        }
+
+
+     </style>                                    
+
+ 
+
+
+
+
+
+    </div>
+ 
+
+</div>
+   <script src="e4.js"></script>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>

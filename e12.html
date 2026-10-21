@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 12</title>
+</head>
+<body>
+
+<header>
+    <h2>Mon Site</h2>
+
+    <nav id="desktop">
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <button id="mobile">☰ Menu</button>
+</header>
+
+<main>
+    <h1>Responsive avec JavaScript</h1>
+
+    <p id="taille"></p>
+
+    <div class="container">
+        <div class="card">Accueil</div>
+        <div class="card">Services</div>
+        <div class="card">Contact</div>
+    </div>
+</main>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#mobile {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 40px 15px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cccccc;
+}
+</style>
+
+<script src="e12.js"></script>
+</body>
+</html>
